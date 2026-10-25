@@ -3,7 +3,11 @@ FROM python:3.9
 WORKDIR /app/backend
 
 COPY requirements.txt /app/backend
+<<<<<<< HEAD
 RUN yum  update \
+=======
+RUN yum update \
+>>>>>>> ecd0161e1c02aeda57b00178829f3bfcea2de5c3
     && yum upgrade -y \
     && yum install -y gcc default-libmysqlclient-dev pkg-config \
     && rm -rf /var/lib/apt/lists/*
